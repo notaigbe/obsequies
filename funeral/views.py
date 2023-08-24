@@ -1,28 +1,31 @@
 from django.contrib import messages
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 
 from .forms import TributeForm
-from .models import Tribute
+from .models import Tribute, Profile
 
 
 # Create your views here.
 class HomeView(View):
     def get(self, request):
         tributes = Tribute.objects.all()
-        hero='hero'
+        profile = get_object_or_404(Profile, pk=1)
+        print(profile)
+        hero = 'hero'
         form = TributeForm()
         context = {
             'form': form,
             'tributes': tributes,
-            'hero':hero
+            'hero': hero,
+            'profile': profile
         }
         return render(request, 'lonely/index.html', context)
 
     def post(self, request, email):
         tributes = Tribute.objects.filter(email=email)
-        hero='hero'
+        hero = 'hero'
         if request.method == 'POST':
             form = TributeForm(request.POST, files=request.FILES or None)
             print(form)
@@ -42,7 +45,7 @@ class HomeView(View):
         context = {
             'form': form,
             'tributes': tributes,
-            'hero':hero
+            'hero': hero
         }
         return render(request, 'lonely/index.html', context)
 
@@ -58,7 +61,7 @@ def read_tribute(request, _id):
 
 def add_tribute(request):
     tributes = Tribute.objects.all()
-    hero='hero'
+    hero = 'hero'
     if request.method == 'POST':
         form = TributeForm(request.POST, files=request.FILES or None)
         print(form)
@@ -81,7 +84,7 @@ def add_tribute(request):
     context = {
         'tribute_form': form,
         'tributes': tributes,
-        'hero':hero
+        'hero': hero
     }
     return render(request, 'lonely/index.html', context)
 

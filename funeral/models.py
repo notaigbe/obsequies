@@ -36,3 +36,12 @@ class Tribute(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Profile(models.Model):
+    title = models.CharField(max_length=200)
+    author = models.CharField(max_length=200)
+    biography = models.TextField()
+
+    def __str__(self):
+        return self.title
