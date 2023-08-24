@@ -1,0 +1,22 @@
+
+services:
+  - type: web
+    name: foreverinourhearts
+    env: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn obsequies.wsgi:application"
+    envVars:
+
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
+      - key: PYTHON_VERSION
+        value: 3.11.4
+      - key: DEBUG
+        value: False
+      - key: DATABASE_URL
+        value: sqlite:///db.sqlite3
+      - key: SSL_REDIRECT
+        value: True
