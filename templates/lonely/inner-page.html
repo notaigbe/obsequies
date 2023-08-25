@@ -12,13 +12,13 @@
           {% if view == 'tribute' %}
           <h2>Tribute by {{ tribute.author }}</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li>{{ tribute.relation }}</li>
           </ol>
           {% else %}
           <h2>Order of Mass</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li>{{ mass.get_mass_display }}</li>
           </ol>
           {% endif %}
