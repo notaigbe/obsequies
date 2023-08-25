@@ -9,22 +9,74 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
+          {% if view == 'tribute' %}
           <h2>Tribute by {{ tribute.author }}</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>{{ tribute.relation }}</li>
           </ol>
+          {% else %}
+          <h2>Order of Mass</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>{{ mass.get_mass_display }}</li>
+          </ol>
+          {% endif %}
         </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
     <section class="inner-page">
-      <div class="container">
-        <p><img class="img-fluid float-end" src="{{ tribute.picture.url }}" alt="banner_company" width="300"/>
-          {{ tribute.message|linebreaks }}
-        </p>
+      <div class="container shadow p-4 rounded">
+
+        {% if view == 'tribute' %}
+          <p><img class="img-fluid float-end" src="{{ tribute.picture.url }}" alt="banner_company" width="300"/>
+            {{ tribute.message|linebreaks }}
+          </p>
+        {% else %}
+        <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+          <li class="nav-item"><a class="nav-link text-secondary" id="hymns-tab" data-bs-toggle="tab" role="tab" aria-controls="hymns" aria-selected="false" href="#hymns">Hymns</a></li>
+          <li class="nav-item"><a class="nav-link active text-secondary"  id="readings-tab" data-bs-toggle="tab" role="tab" aria-controls="readings" href="#readings" aria-selected="true">Liturgy of the Word</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" id="prayers-tab" data-bs-toggle="tab" role="tab" aria-controls="prayers" aria-selected="false" href="#prayers">Prayer of the Faithful</a></li>
+        </ul>
+        <div class="tab-content clearfix" id="myTabContent">
+          <div class="tab-pane fade show p-4 active" id="readings" role="tabpanel" aria-labelledby="readings-tab">
+          {% for reading in readings %}
+        <h4><strong>{{ reading.get_reading_display|title }}</strong></h4>
+        <p><strong>{{ reading.passage }}</strong></p>
+        <p class=""><em>"{{ reading.theme }}"</em></p>
+            <p>{{ reading.body|linebreaksbr }}</p>
+        {% if reading.reading == 'GR' %}
+        <p><em>All</em>: <strong>Praise to you Lord Jesus Christ</strong></p>
+        {% elif reading.reading == 'FR' or reading.reading == 'SR' %}
+        <p><em>All</em>: <strong>Thanks be to God</strong></p>
+        {% elif reading.reading == 'GA' %}
+        <p><em>"Alleluia"</em></p>
+        {% endif %}
+        <hr>
+          {% endfor %}
+            </div>
+          <div class="tab-pane fade show p-4" id="hymns" role="tabpanel" aria-labelledby="hymns-tab">
+          {% for hymn in hymns %}
+        <h4><strong>{{ hymn.get_hymn_display|title }}</strong></h4>
+        <p><strong>{{ hymn.title }}</strong></p>
+        <!--p class="">{{ hymn.number }}</p-->
+            <p>{{ hymn.body|linebreaksbr }}</p>
+        <hr>
+          {% endfor %}
       </div>
+          <div class="tab-pane fade show p-4" id="prayers" role="tabpanel" aria-labelledby="prayers-tab">
+          {% for prayer in prayers %}
+        <h4><strong>{{ prayer.number }}. For {{ prayer.get_point_display }}</strong></h4>
+            <p>{{ prayer.body|linebreaksbr }}</p>
+            <h5><strong>{{ prayer.name }}</strong></h5>
+        <hr>
+          {% endfor %}
+      </div>
+        </div>
+        {% endif %}
+        </div>
     </section>
 
   </main><!-- End #main -->

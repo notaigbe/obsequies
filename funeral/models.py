@@ -45,3 +45,58 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.title
+
+
+READING = (
+    ('FR', 'FIRST READING'), ('RP', 'RESPONSORIAL PSALM'), ('SR', 'SECOND READING'), ('GA', 'GOSPEL ACCLAMATION'), ('GR', 'GOSPEL'))
+MASS = (('VM', 'VIGIL MASS'), ('FM', 'FUNERAL MASS'))
+HYMNS = (('EH', 'ENTRANCE'), ('OH', 'OFFERTORY'), ('C', 'CONSECRATION'), ('CH', 'COMMUNION'), ('RH', 'RECESSIONAL'))
+POINTS = (('0','the Church'),
+          ('1', 'the repose of his soul'),
+          ('2', 'all mourners'),
+          ('3', 'the afflicted'),
+          ('4', 'all present'),
+          ('5', 'the children, family members, friends and well-wishers'),
+          ('6', 'safe journey'))
+
+class Mass(models.Model):
+    mass = models.CharField(max_length=200, choices=MASS, default=0)
+
+    def __str__(self):
+        return self.get_mass_display()
+
+    class Meta:
+        verbose_name_plural = 'Mass'
+
+
+class Reading(models.Model):
+    reading = models.CharField(max_length=20, choices=READING, default=0)
+    passage = models.CharField(max_length=200)
+    theme = models.CharField(max_length=200)
+    body = models.TextField()
+    mass = models.ForeignKey(Mass, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return '{} - {}'.format(self.mass.get_mass_display(), self.get_reading_display())
+
+
+class Hymn(models.Model):
+    hymn = models.CharField(max_length=20, choices=HYMNS, default=0)
+    number = models.IntegerField()
+    title = models.CharField(max_length=200)
+    body = models.TextField()
+    mass = models.ForeignKey(Mass, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return '{} - {}'.format(self.mass.get_mass_display(), self.get_hymn_display())
+
+
+class Prayer(models.Model):
+    point = models.CharField(max_length=20, choices=POINTS, default=0)
+    number = models.IntegerField(unique=True)
+    name = models.CharField(max_length=200)
+    body = models.TextField()
+    mass = models.ForeignKey(Mass, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return '{} - {}'.format(self.mass.get_mass_display(), self.get_point_display())

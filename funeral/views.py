@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 
 from .forms import TributeForm
-from .models import Tribute, Profile
+from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass
 
 
 # Create your views here.
@@ -56,7 +56,7 @@ def index(request):
 
 def read_tribute(request, _id):
     tribute = Tribute.objects.get(id=_id)
-    return render(request, 'lonely/inner-page.html', {'tribute': tribute})
+    return render(request, 'lonely/inner-page.html', {'tribute': tribute, 'view':'tribute'})
 
 
 def add_tribute(request):
@@ -117,3 +117,18 @@ def update_post(request, _id):
         'tributes': tributes
     }
     return render(request, 'lonely/index.html', context)
+
+
+def order_of_mass(request, mass):
+    mass = Mass.objects.get(mass=mass)
+    readings = Reading.objects.filter(mass=mass)
+    hymns = Hymn.objects.filter(mass=mass)
+    prayers = Prayer.objects.filter(mass=mass)
+    context = {
+        'readings': readings,
+        'hymns': hymns,
+        'prayers': prayers,
+        'view': 'mass',
+        'mass': mass
+    }
+    return render(request, 'lonely/inner-page.html', context)
