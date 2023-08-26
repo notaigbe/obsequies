@@ -10,7 +10,7 @@ from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass
 # Create your views here.
 class HomeView(View):
     def get(self, request):
-        tributes = Tribute.objects.all()
+        tributes = Tribute.objects.all().order_by('id')
         profile = get_object_or_404(Profile, pk=1)
         print(profile)
         hero = 'hero'
