@@ -121,7 +121,7 @@ def update_post(request, _id):
 
 def order_of_mass(request, mass):
     mass = Mass.objects.get(mass=mass)
-    readings = Reading.objects.filter(mass=mass)
+    readings = Reading.objects.filter(mass=mass).order_by('id')
     hymns = Hymn.objects.filter(mass=mass)
     prayers = Prayer.objects.filter(mass=mass)
     context = {
