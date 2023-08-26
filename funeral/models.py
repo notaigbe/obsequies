@@ -13,8 +13,8 @@ RELATION = ((0, 'Wife'),
             (7, 'Niece'),
             (8, 'Grandson'),
             (9, 'Granddaughter'),
-            (10, 'Son In-law'),
-            (11, 'Daughter In-law'),
+            (10, 'Son-In-law'),
+            (11, 'Daughter-In-law'),
             (12, 'Friend'),
             (13, 'Admirer'))
 
@@ -60,7 +60,7 @@ POINTS = (('0','the Church'),
           ('6', 'safe journey'))
 
 class Mass(models.Model):
-    mass = models.CharField(max_length=200, choices=MASS, default=0)
+    mass = models.CharField(max_length=200, choices=MASS, default=0, unique=True)
 
     def __str__(self):
         return self.get_mass_display()
@@ -79,6 +79,8 @@ class Reading(models.Model):
     def __str__(self):
         return '{} - {}'.format(self.mass.get_mass_display(), self.get_reading_display())
 
+    class Meta:
+        unique_together = ('reading', 'mass')
 
 class Hymn(models.Model):
     hymn = models.CharField(max_length=20, choices=HYMNS, default=0)
@@ -90,6 +92,9 @@ class Hymn(models.Model):
     def __str__(self):
         return '{} - {}'.format(self.mass.get_mass_display(), self.get_hymn_display())
 
+    class Meta:
+        unique_together = ('hymn', 'mass', 'number')
+
 
 class Prayer(models.Model):
     point = models.CharField(max_length=20, choices=POINTS, default=0)
@@ -100,3 +105,6 @@ class Prayer(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.mass.get_mass_display(), self.get_point_display())
+
+    class Meta:
+        unique_together = ('point', 'mass', 'number')

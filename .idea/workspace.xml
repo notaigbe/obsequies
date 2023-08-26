@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="created model for biography">
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added order of mass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funeral/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funeral/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/inner-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692888671954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added order of mass">
+      <option name="closed" value="true" />
+      <created>1693000111746</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693000111746</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added order of mass">
+      <option name="closed" value="true" />
+      <created>1693001130796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693001130796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +127,7 @@
     <MESSAGE value="debugging namespace error" />
     <MESSAGE value="changed title of gallery image groups" />
     <MESSAGE value="created model for biography" />
-    <option name="LAST_COMMIT_MESSAGE" value="created model for biography" />
+    <MESSAGE value="added order of mass" />
+    <option name="LAST_COMMIT_MESSAGE" value="added order of mass" />
   </component>
 </project>
