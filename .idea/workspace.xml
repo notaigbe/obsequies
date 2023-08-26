@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added unique constraints for masses to models" />
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added ordering to tributes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +125,31 @@
       <option name="project" value="LOCAL" />
       <updated>1693032935634</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added unique constraints for masses to models">
+      <option name="closed" value="true" />
+      <created>1693033637300</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693033637300</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added added ordering to readings">
+      <option name="closed" value="true" />
+      <created>1693045188530</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693045188530</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added ordering to tributes">
+      <option name="closed" value="true" />
+      <created>1693046068380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693046068380</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +160,8 @@
     <MESSAGE value="created model for biography" />
     <MESSAGE value="added order of mass" />
     <MESSAGE value="added unique constraints for masses to models" />
-    <option name="LAST_COMMIT_MESSAGE" value="added unique constraints for masses to models" />
+    <MESSAGE value="added added ordering to readings" />
+    <MESSAGE value="added ordering to tributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ordering to tributes" />
   </component>
 </project>

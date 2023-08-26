@@ -1,3 +1,5 @@
+import os
+
 from django.contrib import messages
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
@@ -15,11 +17,13 @@ class HomeView(View):
         print(profile)
         hero = 'hero'
         form = TributeForm()
+        api_key = os.environ.get('GOOGLE_API_KEY')
         context = {
             'form': form,
             'tributes': tributes,
             'hero': hero,
-            'profile': profile
+            'profile': profile,
+            'api_key':api_key
         }
         return render(request, 'lonely/index.html', context)
 
