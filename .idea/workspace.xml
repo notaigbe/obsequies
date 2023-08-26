@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added order of mass">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funeral/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lonely/inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/inner-page.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added unique constraints for masses to models" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693001130796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added unique constraints for masses to models">
+      <option name="closed" value="true" />
+      <created>1693032935634</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693032935634</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,6 +132,7 @@
     <MESSAGE value="changed title of gallery image groups" />
     <MESSAGE value="created model for biography" />
     <MESSAGE value="added order of mass" />
-    <option name="LAST_COMMIT_MESSAGE" value="added order of mass" />
+    <MESSAGE value="added unique constraints for masses to models" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unique constraints for masses to models" />
   </component>
 </project>
