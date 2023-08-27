@@ -149,7 +149,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = os.environ.get('SECURE_SSL') == 'True'
 SECURE_HSTS_PRELOAD = os.environ.get('SECURE_SSL') == 'True'
 SESSION_COOKIE_SECURE = os.environ.get('SECURE_SSL') == 'True'
 CSRF_COOKIE_SECURE = os.environ.get('SECURE_SSL') == 'True'
-
+X_FRAME_OPTIONS='SAMEORIGIN'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
