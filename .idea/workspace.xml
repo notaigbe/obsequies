@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added ordering to tributes">
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="adding google maps directions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funeral/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693046068380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding google maps directions">
+      <option name="closed" value="true" />
+      <created>1693074196390</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693074196390</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +171,7 @@
     <MESSAGE value="added unique constraints for masses to models" />
     <MESSAGE value="added added ordering to readings" />
     <MESSAGE value="added ordering to tributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ordering to tributes" />
+    <MESSAGE value="adding google maps directions" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding google maps directions" />
   </component>
 </project>
