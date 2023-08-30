@@ -34,7 +34,7 @@
           <p><img class="img-fluid float-end" src="{{ tribute.picture.url }}" alt="banner_company" width="300"/>
             {{ tribute.message|linebreaks }}
           </p>
-        {% else %}
+        {% elif view == 'mass' %}
         <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
           <li class="nav-item"><a class="nav-link text-secondary" id="hymns-tab" data-bs-toggle="tab" role="tab" aria-controls="hymns" aria-selected="false" href="#hymns">Hymns</a></li>
           <li class="nav-item"><a class="nav-link active text-secondary"  id="readings-tab" data-bs-toggle="tab" role="tab" aria-controls="readings" href="#readings" aria-selected="true">Readings</a></li>
@@ -75,6 +75,59 @@
           {% endfor %}
       </div>
         </div>
+        {% else %}
+            <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+          <div class="container">
+
+            <div class="section-title">
+              <h2>Tributes</h2>
+              <p>Click on a name to read the full tribute.</p>
+            </div>
+
+            <div class="row">
+              {% for tribute in tributes %}
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="icon-box">
+                  <!--div class="icon"><i class="bx bxl-dribbble"></i></div-->
+                  <img src="{{ tribute.picture.url }}" class="services-img mt-2 mb-2 justify-content-center" alt="">
+                  <h4 class="title"><a href="{% url 'read_tribute' tribute.id %}">{{ tribute.author}}</a></h4>
+                  <p class="description">{{ tribute.message|truncatechars_html:100 }}</p>
+                  <p class="description">{{ tribute.relation }}</p>
+                </div>
+              </div>
+              {% endfor %}
+              <div class="d-flex text-center">
+            {% if tributes.has_other_pages %}
+              <nav aria-label="...">
+                <ul class="pagination justify-content-center flex-wrap">
+                    {% if tributes.has_previous %}
+                  <li class="page-item"><a class="page-link" href="{% url 'list_tributes' %}?page={{ tributes.previous_page_number }}">&laquo;</a></li>
+                    {% else %}
+                  <li class="page-item disabled"><span class="page-link">&laquo;</span> </li>
+                    {% endif %}
+                    {% for i in tributes.paginator.page_range %}
+                  {% if tributes.number == i %}
+                    <li class="page-item active" aria-current="page"><span class="page-link">{{ i }}</span></li>
+                    {% else %}
+                    <li class="page-item"><a class="page-link" href="{% url 'list_tributes' %}?page={{ i }}">{{ i }}</a></li>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% if tributes.has_next %}
+                  <li class="page-item"><a class="page-link" href="{% url 'list_tributes' %}?page={{ tributes.next_page_number }}">&raquo;</a></li>
+                  {% else %}
+                  <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+                    {% endif %}
+
+                </ul>
+              </nav>
+            {% endif %}
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Services Section -->
         {% endif %}
         </div>
     </section>

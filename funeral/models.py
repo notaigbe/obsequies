@@ -31,6 +31,10 @@ class Tribute(models.Model):
     picture = models.ImageField(upload_to='visitors')
     status = models.IntegerField(choices=STATUS, default=0)
 
+    def user_directory_path(self):
+        # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
+        return "visitor/{0}".format(self.picture)
+
     class Meta:
         ordering = ['created_on']
 
@@ -58,7 +62,8 @@ POINTS = (('0', 'the Church'),
           ('3', 'the afflicted'),
           ('4', 'all present'),
           ('5', 'the children, family members, friends and well-wishers'),
-          ('6', 'safe journey'))
+          ('6', 'safe journey'),
+          ('7', 'happy death'))
 
 
 class Mass(models.Model):

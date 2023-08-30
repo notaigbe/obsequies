@@ -1,6 +1,7 @@
 import os
 
 from django.contrib import messages
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
@@ -12,7 +13,7 @@ from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass
 # Create your views here.
 class HomeView(View):
     def get(self, request):
-        tributes = Tribute.objects.all().order_by('id')
+        tributes = Tribute.objects.order_by('id')[:22]
         profile = get_object_or_404(Profile, pk=1)
         print(profile)
         hero = 'hero'
@@ -23,7 +24,7 @@ class HomeView(View):
             'tributes': tributes,
             'hero': hero,
             'profile': profile,
-            'api_key':api_key
+            'api_key': api_key
         }
         return render(request, 'lonely/index.html', context)
 
@@ -60,7 +61,7 @@ def index(request):
 
 def read_tribute(request, _id):
     tribute = Tribute.objects.get(id=_id)
-    return render(request, 'lonely/inner-page.html', {'tribute': tribute, 'view':'tribute'})
+    return render(request, 'lonely/inner-page.html', {'tribute': tribute, 'view': 'tribute'})
 
 
 def add_tribute(request):
@@ -136,3 +137,20 @@ def order_of_mass(request, mass):
         'mass': mass
     }
     return render(request, 'lonely/inner-page.html', context)
+
+
+def list_tribute(request):
+    all_tributes = Tribute.objects.all()
+    # tributes = all_tributes.order_by('id')[:4]
+    tributes_count = all_tributes.count()
+    page = request.GET.get('page', 1)
+    paginator = Paginator(all_tributes, 20)
+    try:
+        tributes = paginator.page(page)
+    except PageNotAnInteger:
+        tributes = paginator.page(1)
+    except EmptyPage:
+        tributes = paginator.page(paginator.num_pages)
+    pages = all_tributes[:tributes_count:20]
+    return render(request, 'lonely/inner-page.html',
+                  {'tributes': tributes, 'view': 'tributes list', 'pages': pages, 'page': page})
