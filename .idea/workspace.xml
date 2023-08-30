@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="limited initial tributes load to 22 and added a tributes list page with pagination" />
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added ordering by id to tribute list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693369111683</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added ordering by id to tribute list">
+      <option name="closed" value="true" />
+      <created>1693372387642</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1693372387642</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,6 +194,7 @@
     <MESSAGE value="adding google maps directions" />
     <MESSAGE value="added name to tribute model display" />
     <MESSAGE value="limited initial tributes load to 22 and added a tributes list page with pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="limited initial tributes load to 22 and added a tributes list page with pagination" />
+    <MESSAGE value="added ordering by id to tribute list" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ordering by id to tribute list" />
   </component>
 </project>
