@@ -106,7 +106,7 @@ class Hymn(models.Model):
 
 class Prayer(models.Model):
     point = models.CharField(max_length=20, choices=POINTS, default=0)
-    number = models.IntegerField(unique=True)
+    number = models.IntegerField()
     name = models.CharField(max_length=200)
     body = models.TextField()
     mass = models.ForeignKey(Mass, on_delete=models.CASCADE)
