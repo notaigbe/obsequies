@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="changed tribute save confirmation link to tributes list" />
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="corrected prayer number column from unique to unique together with mass and prayer point" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693413747243</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="corrected prayer number column from unique to unique together with mass and prayer point">
+      <option name="closed" value="true" />
+      <created>1693416714333</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1693416714333</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,6 +212,7 @@
     <MESSAGE value="limited initial tributes load to 22 and added a tributes list page with pagination" />
     <MESSAGE value="added ordering by id to tribute list" />
     <MESSAGE value="changed tribute save confirmation link to tributes list" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed tribute save confirmation link to tributes list" />
+    <MESSAGE value="corrected prayer number column from unique to unique together with mass and prayer point" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected prayer number column from unique to unique together with mass and prayer point" />
   </component>
 </project>

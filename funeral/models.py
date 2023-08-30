@@ -58,12 +58,12 @@ MASS = (('VM', 'VIGIL MASS'), ('FM', 'FUNERAL MASS'))
 HYMNS = (('EH', 'ENTRANCE'), ('OH', 'OFFERTORY'), ('C', 'CONSECRATION'), ('CH', 'COMMUNION'), ('RH', 'RECESSIONAL'))
 POINTS = (('0', 'the Church'),
           ('1', 'the repose of his soul'),
-          ('2', 'all mourners'),
+          ('2', 'all the mourners'),
           ('3', 'the afflicted'),
           ('4', 'all present'),
           ('5', 'the children, family members, friends and well-wishers'),
           ('6', 'safe journey'),
-          ('7', 'happy death'))
+          ('7', 'a happy death'))
 
 
 class Mass(models.Model):
