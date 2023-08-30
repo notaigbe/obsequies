@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added name to tribute model display">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funeral/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funeral/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funeral/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/lonely/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lonely/inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/inner-page.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="limited initial tributes load to 22 and added a tributes list page with pagination" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693281045166</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="limited initial tributes load to 22 and added a tributes list page with pagination">
+      <option name="closed" value="true" />
+      <created>1693369111683</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693369111683</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +185,7 @@
     <MESSAGE value="added ordering to tributes" />
     <MESSAGE value="adding google maps directions" />
     <MESSAGE value="added name to tribute model display" />
-    <option name="LAST_COMMIT_MESSAGE" value="added name to tribute model display" />
+    <MESSAGE value="limited initial tributes load to 22 and added a tributes list page with pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="limited initial tributes load to 22 and added a tributes list page with pagination" />
   </component>
 </project>

@@ -140,7 +140,7 @@ def order_of_mass(request, mass):
 
 
 def list_tribute(request):
-    all_tributes = Tribute.objects.all()
+    all_tributes = Tribute.objects.order_by('id')
     # tributes = all_tributes.order_by('id')[:4]
     tributes_count = all_tributes.count()
     page = request.GET.get('page', 1)
