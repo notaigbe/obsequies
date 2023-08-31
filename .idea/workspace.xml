@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="corrected prayer number column from unique to unique together with mass and prayer point" />
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added ordering to order of mass models">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funeral/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obsequies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/obsequies/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693416714333</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added ordering to order of mass models">
+      <option name="closed" value="true" />
+      <created>1693420104395</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1693420104395</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +227,7 @@
     <MESSAGE value="added ordering by id to tribute list" />
     <MESSAGE value="changed tribute save confirmation link to tributes list" />
     <MESSAGE value="corrected prayer number column from unique to unique together with mass and prayer point" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected prayer number column from unique to unique together with mass and prayer point" />
+    <MESSAGE value="added ordering to order of mass models" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ordering to order of mass models" />
   </component>
 </project>

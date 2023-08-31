@@ -1,3 +1,4 @@
+import datetime
 import os
 
 from django.contrib import messages
@@ -19,12 +20,15 @@ class HomeView(View):
         hero = 'hero'
         form = TributeForm()
         api_key = os.environ.get('GOOGLE_API_KEY')
+
+        event_date = datetime.date(2023,9,6)
         context = {
             'form': form,
             'tributes': tributes,
             'hero': hero,
             'profile': profile,
-            'api_key': api_key
+            'api_key': api_key,
+            'mydate':event_date
         }
         return render(request, 'lonely/index.html', context)
 
