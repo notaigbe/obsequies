@@ -160,9 +160,8 @@ def list_tribute(request):
                   {'tributes': tributes, 'view': 'tributes list', 'pages': pages, 'page': page})
 
 
-def get_map(request, location, lat, lng, location_key):
-    return render(request, 'lonely/map.html',
-                  {'lat': lat, 'lng': lng, 'location': location, 'location_key': location_key})
+def countdown(request):
+    return render(request, 'comingsoon/index.html')
 
 
 def get_directions(request, location_key):
