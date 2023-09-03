@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added ordering to order of mass models">
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="added download button for funeral mass brochure">
+      <change afterPath="$PROJECT_DIR$/templates/lonely/directions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lonely/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funeral/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funeral/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/funeral/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obsequies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/obsequies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lonely/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,15 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/notai/PycharmProjects/pythonProject/obsequies&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/notai/PycharmProjects/pythonProject/obsequies",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies" />
@@ -208,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693420104395</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added download button for funeral mass brochure">
+      <option name="closed" value="true" />
+      <created>1693462447868</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1693462447868</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +240,7 @@
     <MESSAGE value="changed tribute save confirmation link to tributes list" />
     <MESSAGE value="corrected prayer number column from unique to unique together with mass and prayer point" />
     <MESSAGE value="added ordering to order of mass models" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ordering to order of mass models" />
+    <MESSAGE value="added download button for funeral mass brochure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added download button for funeral mass brochure" />
   </component>
 </project>

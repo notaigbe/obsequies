@@ -112,7 +112,30 @@
   <script src="{% static 'assets/lonely/vendor/swiper/swiper-bundle.min.js' %}"></script>
   <script src="{% static 'assets/lonely/vendor/waypoints/noframework.waypoints.js' %}"></script>
   <script src="{% static 'assets/lonely/vendor/php-email-form/validate.js' %}"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap&libraries=&v=weekly" defer></script>
+  <script>
+      "use strict";
 
+      function initMap() {
+        const myLatLng = {
+          lat: 6.328381061553955,
+          lng: 5.599662780761719
+        };
+        const map = new google.maps.Map(document.getElementById("gmp-map"), {
+          zoom: 14,
+          center: myLatLng,
+          fullscreenControl: false,
+          zoomControl: true,
+          streetViewControl: false
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "My location"
+        });
+      }
+    </script>
   <!-- Template Main JS File -->
   <script src="{% static 'assets/lonely/js/main.js' %}"></script>
 

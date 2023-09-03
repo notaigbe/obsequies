@@ -21,14 +21,14 @@ class HomeView(View):
         form = TributeForm()
         api_key = os.environ.get('GOOGLE_API_KEY')
 
-        event_date = datetime.date(2023,9,6)
+        event_date = datetime.date(2023, 9, 6)
         context = {
             'form': form,
             'tributes': tributes,
             'hero': hero,
             'profile': profile,
             'api_key': api_key,
-            'mydate':event_date
+            'mydate': event_date
         }
         return render(request, 'lonely/index.html', context)
 
@@ -158,3 +158,17 @@ def list_tribute(request):
     pages = all_tributes[:tributes_count:20]
     return render(request, 'lonely/inner-page.html',
                   {'tributes': tributes, 'view': 'tributes list', 'pages': pages, 'page': page})
+
+
+def get_map(request, location, lat, lng, location_key):
+
+
+    return render(request, 'lonely/map.html',
+                  {'lat': lat, 'lng': lng, 'location': location, 'location_key':location_key})
+
+
+def get_directions(request, location_key):
+
+
+    return render(request, 'lonely/directions.html',
+                  {'location_key':location_key})
