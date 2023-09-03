@@ -161,14 +161,10 @@ def list_tribute(request):
 
 
 def get_map(request, location, lat, lng, location_key):
-
-
     return render(request, 'lonely/map.html',
-                  {'lat': lat, 'lng': lng, 'location': location, 'location_key':location_key})
+                  {'lat': lat, 'lng': lng, 'location': location, 'location_key': location_key})
 
 
 def get_directions(request, location_key):
-
-
     return render(request, 'lonely/directions.html',
-                  {'location_key':location_key})
+                  {'location_key': location_key})
