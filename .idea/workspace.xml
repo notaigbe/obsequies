@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="corrected reception time to 11am">
+    <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="decluttered hero section">
+      <change afterPath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +41,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/notai/PycharmProjects/obsequies/static/assets/lonely/img/portfolio&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/notai/PycharmProjects/obsequies/static/assets/lonely/img&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\lonely\img" />
       <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\lonely\img\portfolio" />
       <recent name="C:\Users\notai\PycharmProjects\obsequies\templates\comingsoon" />
       <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies" />
       <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies\static\assets\lonely\img" />
-      <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies\static\assets\lonely" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\comingsoon" />
@@ -264,7 +267,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693794896052</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added custom favicon">
+      <option name="closed" value="true" />
+      <created>1693798163825</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693798163825</updated>
+    </task>
+    <task id="LOCAL-00027" summary="decluttered hero section">
+      <option name="closed" value="true" />
+      <created>1693806526364</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693806526364</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,6 +309,8 @@
     <MESSAGE value="adjusting map page for mobile" />
     <MESSAGE value="added countdown timer" />
     <MESSAGE value="corrected reception time to 11am" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected reception time to 11am" />
+    <MESSAGE value="added custom favicon" />
+    <MESSAGE value="decluttered hero section" />
+    <option name="LAST_COMMIT_MESSAGE" value="decluttered hero section" />
   </component>
 </project>
