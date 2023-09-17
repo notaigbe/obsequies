@@ -8,7 +8,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 
 from .forms import TributeForm
-from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass
+from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass, Photo
 
 
 # Create your views here.
@@ -20,7 +20,7 @@ class HomeView(View):
         hero = 'hero'
         form = TributeForm()
         api_key = os.environ.get('GOOGLE_API_KEY')
-
+        photos = Photo.objects.all()
         event_date = datetime.date(2023, 9, 6)
         context = {
             'form': form,
@@ -28,7 +28,8 @@ class HomeView(View):
             'hero': hero,
             'profile': profile,
             'api_key': api_key,
-            'mydate': event_date
+            'mydate': event_date,
+            'photos': photos
         }
         return render(request, 'lonely/index.html', context)
 

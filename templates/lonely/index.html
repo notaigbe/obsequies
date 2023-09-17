@@ -202,7 +202,7 @@
     </section><-- End Resume Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <!--section id="services" class="services section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -272,7 +272,7 @@
         <p><a href="{% url 'get_directions' 'ink2' %}">Chosen Hotel, Ujemen, Ekpoma</a></p>
         <p><a href="{% url 'get_directions' 'azsf' %}">Protea by Marriot Hotel, Benin City</a></p>
       </div>
-    </section><!-- End Services Section -->
+    </section>-- End Services Section -->
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
@@ -320,155 +320,42 @@
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Forever</li>
-              <li data-filter=".filter-app">In</li>
-              <li data-filter=".filter-card">Our</li>
-              <li data-filter=".filter-web">Hearts</li>
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-vigil">Vigil</li>
+              <li data-filter=".filter-funeral">Funeral</li>
+              <li data-filter=".filter-interment">Interment</li>
+              <li data-filter=".filter-socials">Socials</li>
+              <li data-filter=".filter-thanksgiving">Thanksgiving</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          {% for photo in photos %}
+          {% if photo.filter == 'vigil' %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-vigil">
+            {% elif photo.filter == 'funeral' %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-funeral">
+            {% elif photo.filter == 'interment' %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-interment">
+            {% elif photo.filter == 'socials' %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-socials">
+            {% elif photo.filter == 'thanksgiving' %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-thanksgiving">
+            {% endif %}
             <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-1.jpeg' %}" class="img-fluid" alt="">
+              <img src="{{ photo.picture.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Dad, Mom and Daughter</h4>
-                <p>Vacation</p>
+                <h4>{{ photo.title }}</h4>
+                <p>{{ photo.description }}</p>
               </div>
               <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{{ photo.picture.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ photo.description }}"><i class="bx bx-plus"></i></a>
                 <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-2.jpeg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Mom</h4>
-                <p>Vacation</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-2.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-3.jpeg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Children</h4>
-                <p>Family</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-3.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Family at Mom's 75th Birthday</h4>
-                <p>Celebration</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad at Mom's 75th Birthday</h4>
-                <p>Celebration</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad, Mom and Daughter</h4>
-                <p>Celebration</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad, Mom and Sons</h4>
-                <p>Family</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Son</h4>
-                <p>Family</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-9.jpeg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Son</h4>
-                <p>Family</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-9.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/lonely/img/portfolio/portfolio-10.jpeg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dad and Sons</h4>
-                <p>Family</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/lonely/img/portfolio/portfolio-10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <!--a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a-->
-              </div>
-            </div>
-          </div>
-        </div>
+          {% endfor %}
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -487,8 +374,8 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>R.S.V.P.</h3>
-              <p>Victor Otaigbe - +234 703 972 3451<br>Peter Otaigbe - +234 818 386 7860</p>
+              <!--h3>R.S.V.P.</h3>
+              <p>Victor Otaigbe - +234 703 972 3451<br>Peter Otaigbe - +234 818 386 7860</p-->
               <h5><strong>Use the form provided to add a Tribute</strong></h5>
               <!--div class="social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -503,12 +390,12 @@
             <div class="info">
               <div class="d-flex align-items-center">
                 <i class="bi bi-geo-alt"></i>
-                <p>St. Francis Catholic Church,<br>Benin City</p>
+                <p>Powered by<br>Gnotable Technologies</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-envelope"></i>
-                <p>notaigbe@hotmail.com</p>
+                <p>info@gnotable.ng</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">

@@ -122,3 +122,16 @@ class Family(models.Model):
     relationship = models.CharField(max_length=50, choices=RELATION)
     count = models.IntegerField()
 
+
+class Photo(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.CharField(max_length=200)
+    filter = models.CharField(max_length=50)
+    picture = models.ImageField(upload_to='burial')
+
+    def user_directory_path(self):
+        # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
+        return "burial/{0}".format(self.picture)
+
+    def __str__(self):
+        return '{}'.format(self.title)

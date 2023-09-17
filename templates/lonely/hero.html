@@ -1,17 +1,18 @@
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>Sir Matthew Imomio Ehigiator Otaigbe</h1>
-    <br><br><br>
+  <section id="hero" class="d-flex flex-column align-items-end justify-content-end">
+
+    <br><br><br><br><br><br><br><br><br><br>
     <!--h2 style="text-shadow: 2px 2px #563838;"><strong>Loving husband, father, grandfather, brother, cousin, uncle, mentor and friend</strong></h2-->
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down opacity-25"></i></a><br><br>
-    <h4 class="text-warning shadow"><strong> 18th 1937 - July 21st 2023</strong></h4>
-    <h4 class="text-warning"><u>Obsequies</u></h4>
-    <h4 class="text-warning">September 7th - 10th 2023</h4>
+    <!--a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down opacity-25"></i></a><br><br-->
+    <!--h4 class="text-warning"><u>Obsequies</u></h4-->
+    <!--h4 class="text-black"><strong> September 8th 2023 </strong></h4-->
     {% now "Y-m-d" as today_date %}
     {% if today_date < mydate|date:"Y-m-d" %}
-    <a href="{% url 'download' %}" class="btn btn-warning disabled"><i class="bi bi-download"></i> Download Vigil & Funeral Mass Brochure </a>
+    <!--a href="{% url 'download' %}" class="btn btn-warning disabled"><i class="bi bi-download"></i> Download Vigil & Funeral Mass Brochure </a-->
     {% else %}
-    <a href="{% url 'download' %}" class="btn btn-warning"><i class="bi bi-download"></i> Download Vigil & Funeral Mass Brochure </a>
+    <!--a href="{% url 'download' %}" class="btn btn-warning"><i class="bi bi-download"></i> Download Vigil & Funeral Mass Brochure </a-->
     {% endif %}
-    <h1 class="text-white" id="demo"></h1>
+    <!--h1 class="text-white" id="demo"></h1-->
+    <h1 class="text-black text-center">Sir Matthew Imomio Ehigiator Otaigbe, KSP, JP</h1>
+    <h4 class="text-black shadow"><strong> 18th 1937 - July 21st 2023 </strong></h4>
   </section><!-- End Hero -->
