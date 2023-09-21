@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') == 'True'
-ALLOWED_HOSTS = ['127.0.0.1', 'foreverinourhearts.onrender.com', 'foreverinourhearts.com.ng', 'www.foreverinourhearts.com.ng', 'memorial.foreverinourhearts.com.ng']
+ALLOWED_HOSTS = ['127.0.0.1', 'foreverinourhearts.onrender.com', 'foreverinourhearts.com.ng', 'www.foreverinourhearts.com.ng', 'memorial.foreverinourhearts.com.ng', '54.165.40.181']
 
 
 # Application definition
