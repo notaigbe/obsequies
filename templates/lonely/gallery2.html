@@ -1,0 +1,79 @@
+{% extends 'lonely/base.html' %}
+{% load static %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+          <h2>Photo Gallery</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Funeral</li>
+          </ol>
+
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<header class="text-center mt-3">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h2>{{event|title}}</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="inner-page">
+      <div class="container shadow p-4 rounded">
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+          <section>
+            <!-- Photos by Daniel J. Schwarz (unsplash.com/@danieljschwarz) -->
+            <div class="gallery">
+                {% for photo in gallery %}
+                <div class="gallery-item item-3x4">
+                    <img class="thumb placeholder" src="{{ photo.picture.url }}" data-src="{{ photo.picture.url }}" data-image="{{ photo.picture.url }}" data-title="{{ photo.description }}" alt="{{ photo.description }}">
+                    <div class="caption"><span>{{ photo.title }}</span></div>
+                </div>
+                {% endfor %}
+
+                <!--div class="gallery-item item-4x3">
+                    <img class="thumb placeholder" src="https://codeconvey.com/Tutorials/global-images/image-2.jpg" data-src="https://codeconvey.com/Tutorials/global-images/image-2.jpg" data-image="https://codeconvey.com/Tutorials/global-images/image-2.jpg" data-title="Photo by Daniel J. Schwarz (2)" alt="Photo by Daniel J. Schwarz">
+                    <div class="caption"><span>Caption 2</span></div>
+                </div>
+
+                <div class="gallery-item item-3x4">
+                    <img class="thumb placeholder" src="https://codeconvey.com/Tutorials/global-images/image-3.jpg" data-src="https://codeconvey.com/Tutorials/global-images/image-3.jpg" data-image="https://codeconvey.com/Tutorials/global-images/image-3.jpg" data-title="Photo by Daniel J. Schwarz (3)" alt="Photo by Daniel J. Schwarz">
+                    <div class="caption"><span>Caption 3</span></div>
+                </div>
+
+                <div class="gallery-item item-4x3">
+                    <img class="thumb placeholder" src="https://codeconvey.com/Tutorials/global-images/image-4.jpg" data-src="https://codeconvey.com/Tutorials/global-images/image-4.jpg" data-image="https://codeconvey.com/Tutorials/global-images/image-4.jpg" data-title="Photo by Daniel J. Schwarz (4)" alt="Photo by Daniel J. Schwarz">
+                    <div class="caption"><span>Caption 4</span></div>
+                </div-->
+            </div>
+          </section>
+
+                    </div>
+                </div>
+            </div>
+              </div>
+        </section>
+     </main><!-- End #main -->
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- Gallery JS -->
+    <script src="{% static 'assets/js/gallery.js' %}"></script>
+
+    <!-- Analytics -->
+
+{% endblock %}

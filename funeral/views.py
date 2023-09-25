@@ -20,7 +20,7 @@ class HomeView(View):
         hero = 'hero'
         form = TributeForm()
         api_key = os.environ.get('GOOGLE_API_KEY')
-        photos = Photo.objects.all()
+        photos = Photo.objects.all()[:10]
         event_date = datetime.date(2023, 9, 6)
         context = {
             'form': form,
@@ -168,3 +168,9 @@ def countdown(request):
 def get_directions(request, location_key):
     return render(request, 'lonely/directions.html',
                   {'location_key': location_key})
+
+
+def gallery(request, event):
+    gallery = Photo.objects.filter(filter=event)
+    return render(request, 'lonely/gallery2.html',
+                  {'event': event, 'gallery':gallery})
