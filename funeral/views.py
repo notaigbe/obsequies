@@ -15,8 +15,8 @@ from .models import Tribute, Profile, Reading, Hymn, Prayer, Mass
 class HomeView(View):
     def get(self, request):
         tributes = Tribute.objects.order_by('id')[:25]
-        profile = get_object_or_404(Profile, pk=1)
-        print(profile)
+        #profile = get_object_or_404(Profile, pk=1)
+        #print(profile)
         hero = 'hero'
         form = TributeForm()
         api_key = os.environ.get('GOOGLE_API_KEY')
@@ -26,7 +26,7 @@ class HomeView(View):
             'form': form,
             'tributes': tributes,
             'hero': hero,
-            'profile': profile,
+            #'profile': profile,
             'api_key': api_key,
             'mydate': event_date
         }
