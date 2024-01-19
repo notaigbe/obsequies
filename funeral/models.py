@@ -122,3 +122,6 @@ class Family(models.Model):
     relationship = models.CharField(max_length=50, choices=RELATION)
     count = models.IntegerField()
 
+
+# class Photo(models.Model):
+#     picture = models.ImageField(upload_to='visitors')

@@ -17,7 +17,18 @@ class TributeForm(ModelForm):
                 attrs={'class': "form-control w-100 p-2", 'placeholder': 'Email', 'required': 'required'}),
             'picture': FileInput(
                 attrs={'class': "form-control form-control-lg", 'type': 'file'}),
-            'relation': TextInput(attrs={'class': 'form-control', 'placeholder': 'Relationship', 'required': 'required'}),
+            'relation': TextInput(
+                attrs={'class': 'form-control', 'placeholder': 'Relationship', 'required': 'required'}),
             'status': Select(attrs={'class': 'form-control'})
 
         }
+
+
+# class PhotoForm(ModelForm):
+#     class Meta:
+#         model = Photo
+#         fields = ['picture']
+#         widgets = {
+#             'picture': FileInput(
+#                 attrs={'class': "form-control form-control-lg", 'type': 'file', 'multiple': 'True', 'name': 'photos'})
+#         }
