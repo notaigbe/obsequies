@@ -28,10 +28,10 @@
     </section><!-- End Breadcrumbs Section -->
 
     <section class="inner-page">
-      <div class="container shadow p-4 rounded">
+      <div class="container shadow p-4 rounded flex">
 
         {% if view == 'tribute' %}
-          <p><img class="img-fluid float-end" src="{{ tribute.picture.url }}" alt="banner_company" width="300"/>
+          <p><img class="img-fluid float-end" src="{{ tribute.picture.url }}" alt="banner_company" style="image-fit: contain" width="300px"/>
             {{ tribute.message|linebreaks }}
           </p>
         {% elif view == 'mass' %}
