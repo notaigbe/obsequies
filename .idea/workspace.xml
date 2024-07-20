@@ -5,7 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e1a42a5-1496-4479-9681-9a445cc19ecd" name="Changes" comment="changed hero and profile images">
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0131.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0132.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0147.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0152.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0153.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0167.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0193.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0194.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0196.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0207.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0223.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0237.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0241.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0245.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0263.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0281.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0299.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0303.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0326.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0353.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0355.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0406.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0408.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0424.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0434.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0445.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0457.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0464.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0475.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0492.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0502.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0506.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0519.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0536.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0561.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0572.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0575.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0586.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0589.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0594.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0601.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0622.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0628.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0629.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0648.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0728.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0730.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0768.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0783.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0804.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0809.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0819.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0827.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0831.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0835.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0839.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0875.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0883.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0891.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0900.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0917.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0918.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0925.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_0998.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_100323.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_100337.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_100340.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/gallery/web/DSC_1055.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/img/dad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/img/dad.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg-.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg-.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/lonely/img/hero-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lonely/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lonely/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +100,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="memorial" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -32,28 +116,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/notai/PycharmProjects/obsequies/static/assets/lonely/img&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "remembrance",
+    "last_opened_file_path": "C:/Users/notai/PycharmProjects/obsequies/static/assets/img/memories",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\img\memories" />
       <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\lonely\img" />
       <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\lonely\img\portfolio" />
       <recent name="C:\Users\notai\PycharmProjects\obsequies\templates\comingsoon" />
       <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies" />
-      <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies\static\assets\lonely\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\notai\PycharmProjects\obsequies\static\assets\comingsoon" />
       <recent name="C:\Users\notai\PycharmProjects\pythonProject\obsequies\static\assets\lonely\img" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
